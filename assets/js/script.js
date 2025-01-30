@@ -52,3 +52,19 @@ window.addEventListener("scroll", function () {
     backTopBtn.classList.remove("active");
   }
 });
+
+// Newsletter success message 
+document.getElementById("subscribe-form").addEventListener("submit", function(event) {
+  event.preventDefault(); // Prevent actual form submission
+
+  // Show the success message
+  document.getElementById("success-message").style.display = "block";
+
+  // Optionally, clear the input field
+  this.reset();
+
+  // Hide the message after a few seconds (optional)
+  setTimeout(() => {
+    document.getElementById("success-message").style.display = "none";
+  }, 3000);
+});

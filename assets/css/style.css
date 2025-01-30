@@ -1396,3 +1396,9 @@ body {
   .footer-top .container { grid-template-columns: 1fr 0.6fr 0.9fr 1fr; }
 
 }
+
+.success-message {
+  color: green;
+  font-size: 14px;
+  margin-top: 5px;
+}
